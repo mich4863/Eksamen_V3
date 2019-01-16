@@ -1,0 +1,6 @@
+$color-bg: #f7f7f7;
+body {
+  background: $color-bg;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'

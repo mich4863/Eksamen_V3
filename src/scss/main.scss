@@ -1,6 +1,13 @@
 $color-bg: #f7f7f7;
+
 body {
-  background: $color-bg;
+  background: $color-bg !important;
 }
+
+.jumbotron {
+  background-color: $color-bg !important;
+}
+
+
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'

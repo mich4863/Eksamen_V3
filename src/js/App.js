@@ -1,3 +1,6 @@
+import SetupCycleView from "./controller/CycleController";
+import getCycles from './model/Api'
+
 class App {
     constructor() {
 
@@ -8,7 +11,7 @@ class App {
             <!-- Header -->
             <div class="container">
               <header>
-                <h1>Bicycle</h1>
+                <h5>bil</h5>
               </header>
             </div>  
         `
@@ -20,15 +23,32 @@ class App {
         const jumbotronHTML = `
             <!-- Jumbotron -->
             <div class="jumbotron">
-              <h1 class="display-4">Hello, world!</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6" id="jumbotronText">
+                    <h1 class="display-4">Bicycle Innovation Lab</h1>
+                    <p class="lead">Forening med cykelbibliotek, værksted og forskellige innovative cykelprojekter til fremme for cykelkulturen, og cyklen som det milijørigtige og sunde alternativ til bilen.</p>
+                    <a class="btn btn-primary btn-lg" role="button">Bliv medlem</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./img/jumbotron.gif" class="img-fluid" style="min-width: 100%;"/>
+                  </div>
+                </div>
+              </div>
             </div>
         `
         document.body.insertAdjacentHTML('beforeend', jumbotronHTML)
+
+        /*
+        * CykelBibilotek
+        */
+       SetupCycleView();
+
+       console.log(getCycles())
     }
+
+    
+
 }
 
 /*-- Start app, when content is loaded --*/

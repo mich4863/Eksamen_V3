@@ -8,6 +8,29 @@ body {
   background-color: $color-bg !important;
 }
 
+#jumbotronText {
+  margin-top: 6%;
+}
+
+.btn {
+  background-color: #F80685 !important;
+  border: none !important; 
+}
+
+.btn:hover {
+  color: white !important;
+}
+
+.btn.btn-secondary {
+  background-color: transparent !important;
+  color: #F80685 !important;
+  border-style: solid !important;
+  border-color: #F80685 !important;
+  border-width: 1px !important;
+  margin:auto;
+  display:block;
+}
+
 
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'

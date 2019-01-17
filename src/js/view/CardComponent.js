@@ -1,15 +1,13 @@
+import Cycle from "../model/Cycle";
 
-
-export default class CardComponent {
+export default function CardComponent(cycle) {
+    let cyc = new Cycle(cycle); 
     
-
-    render() {
         return `
-        <article class="col">
+        <article class="col-md-4 col-12">
           <div class="card">
-            <img class="card-img-top" src="#"> 
+            <img class="card-img-top" src="${cyc.image}"> 
           </div>
         </article>
         `
-    }
 }

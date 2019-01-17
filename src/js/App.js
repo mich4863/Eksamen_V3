@@ -11,7 +11,7 @@ class App {
             <!-- Header -->
             <div class="container">
               <header>
-                <h5>bil</h5>
+                <h5><del>bil</del></h5>
               </header>
             </div>  
         `
@@ -31,7 +31,7 @@ class App {
                     <a class="btn btn-primary btn-lg" role="button">Bliv medlem</a>
                   </div>
                   <div class="col-md-6">
-                    <img src="./img/jumbotron.gif" class="img-fluid" style="min-width: 100%;"/>
+                    <img src="./img/jumbotron.gif" class="img-fluid"/>
                   </div>
                 </div>
               </div>
@@ -44,7 +44,7 @@ class App {
         */
        SetupCycleView();
 
-       console.log(getCycles())
+       
     }
 
     

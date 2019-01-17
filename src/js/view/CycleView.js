@@ -18,7 +18,7 @@ export default function CycleView() {
              </div>
            </div>      
          </div>
-         <button type="button" class="btn btn-secondary">Vis alle</button>
+         <button type="button" class="btn btn-secondary" id="showAllButton">Vis alle</button>
        </section>
     `
 }
@@ -30,4 +30,14 @@ export function cycleResults(result) {
         cycleString += CardComponent(cycle)
     });
     return cycleString
+}
+
+export function cycleFirstResults(result) {
+  let cycString = '';
+
+  result.splice(6)
+  result.forEach(cycle => {
+    cycString += CardComponent(cycle)
+  });
+  return cycString;
 }

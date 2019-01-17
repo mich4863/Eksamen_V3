@@ -1,4 +1,4 @@
-import CycleView, { cycleResults } from '../view/CycleView'
+import CycleView, { cycleResults, cycleFirstResults } from '../view/CycleView'
 import getCycles from '../model/Api'
 
 export default function SetupCycleView() {
@@ -7,11 +7,20 @@ export default function SetupCycleView() {
     document.body.insertAdjacentHTML('beforeend', cycleViewHTML)
 
     const cycleSection = document.getElementById('cycleSection')
-    
+
     getCycles()
     .then(reponse => {
-        const result = cycleResults(reponse)
+        const result = cycleFirstResults(reponse)
 
         cycleSection.innerHTML = result;
+    })
+
+    document.getElementById('showAllButton').addEventListener('click', function() {
+        getCycles()
+        .then(reponse => {
+            const results = cycleResults(reponse)
+
+            cycleSection.innerHTML = results;
+        })
     })
 }

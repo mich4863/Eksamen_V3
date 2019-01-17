@@ -35,8 +35,21 @@ body {
   display:block;
 }
 
+.btn.btn-secondary:hover {
+  border-width: 2px !important;
+}
+
 .card {
   margin-bottom: 5% !important;
+}
+
+ul li a {
+  color:black !important;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #F80685;
 }
 
 

@@ -6,7 +6,7 @@ export default function CycleView() {
     return `
        <!-- Favorite Movies -->
        <div class="container">
-         <h2 class="display-4 text-center">CykelBibliotek</h2>
+         <h2 class="display-4 text-center">Cykelbibliotek</h2>
          <p class="text-center">Prøv en ny cykel som alternativ til din bil. Skal du ud med tvillingerne eller vil du pendle langt, så har vi den rigtige cykel til dig.</p>
        </div>
        

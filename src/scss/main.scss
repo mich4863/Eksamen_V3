@@ -8,8 +8,12 @@ body {
   background-color: $color-bg !important;
 }
 
-#jumbotronText {
-  margin-top: 6%;
+#jumbotronImage {
+  background-image: url("../img/jumbotron.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 280px;
 }
 
 .btn {

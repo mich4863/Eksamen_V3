@@ -30,8 +30,8 @@ class App {
                     <p class="lead">Forening med cykelbibliotek, værksted og forskellige innovative cykelprojekter til fremme for cykelkulturen, og cyklen som det milijørigtige og sunde alternativ til bilen.</p>
                     <a class="btn btn-primary btn-lg" role="button">Bliv medlem</a>
                   </div>
-                  <div class="col-md-6">
-                    <img src="./img/jumbotron.gif" class="img-fluid"/>
+                  <div class="col-md-6" id="jumbotronImage">
+                    <!--<img src="./img/jumbotron.gif" class="img-fluid"/>-->
                   </div>
                 </div>
               </div>
